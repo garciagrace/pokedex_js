@@ -1,0 +1,34 @@
+:root {
+  --clr-100: #efefbb;
+  --clr-200: #d4d3dd;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Acme', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--ff-secondary);
+  font-size: calc(6vw + 1rem);
+  color: rgba(180, 0, 0, 0.8);
+  letter-spacing: 2px;
+}
+
+body {
+  background: var(--clr-bg-100);
+  background: linear-gradient(to right, var(--clr-200), var(--clr-100));
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
+.container {
+  width: 90vw;
+  margin-inline: auto;
+}
