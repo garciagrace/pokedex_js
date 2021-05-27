@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@300;400&display=swap"
       rel="stylesheet"
     />
 
@@ -18,7 +18,22 @@
     <header class="container">
       <h1>PokéDex</h1>
     </header>
-    <main class="container"></main>
+    <main class="container pokemon-container" data-container></main>
+
+    <!-- Template for pokemon -->
+    <template id="pokemon-template">
+      <div class="pokemon">
+        <div class="pokemon-img">
+          <img src="" alt="" />
+        </div>
+
+        <div class="pokemon-info">
+          <span class="number"></span>
+          <h4 class="name"></h4>
+          <p class="type"></p>
+        </div>
+      </div>
+    </template>
 
     <script src="./js/script.js"></script>
   </body>
